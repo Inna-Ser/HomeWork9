@@ -18,7 +18,7 @@ public class Mane {
         for (int i = 0; i < arr.length; i++) {
             sum = sum + arr[i];
         }
-        System.out.println(sum);
+        System.out.println("Сумма затрат затрат за месяц составила " + sum + " рублей.");
     }
 }
 
