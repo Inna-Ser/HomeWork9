@@ -20,7 +20,7 @@ public class Mane {
             sum += expence;
         }
         System.out.println("Сумма затрат затрат за месяц составила " + sum + " рублей.");
-    // Вилка затрат
+        // Задача № 2 Вилка затрат
         int maxMeaning = 99_999;
         int minMtaning = 200_001;
         for (int expenses : arr) {
@@ -31,7 +31,13 @@ public class Mane {
                 minMtaning = expenses;
             }
         }
-        System.out.println("Минимальная сумма трат за день составила " + minMtaning + " рублей. Максимальная сумма трат за день составила " +  maxMeaning + " рублей.");
+        System.out.println("Минимальная сумма трат за день составила " + minMtaning + " рублей. Максимальная сумма трат за день составила " + maxMeaning + " рублей.");
+    // Задача № 3 Средняя сумма трат за ммесяц
+        for (int j : arr) {
+            double averageCost = (sum += j) / arr.length;
+            System.out.println("Средняя сумма трат за месяц составила " + averageCost + " рублей.");
+            break;
+        }
     }
 }
 
