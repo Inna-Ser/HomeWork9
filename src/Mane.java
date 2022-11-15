@@ -11,14 +11,27 @@ public class Mane {
         }
         return arr;
     }
-// Задача № 1 Сумма
+
+    // Задача № 1 Сумма
     public static void main(String[] args) {
         int[] arr = generateRandomArray();
         int sum = 0;
-        for (int element:arr) {
-            sum += element;
+        for (int expence : arr) {
+            sum += expence;
         }
         System.out.println("Сумма затрат затрат за месяц составила " + sum + " рублей.");
+    // Вилка затрат
+        int maxMeaning = 99_999;
+        int minMtaning = 200_001;
+        for (int expenses : arr) {
+            if (expenses > maxMeaning) {
+                maxMeaning = expenses;
+            }
+            if (expenses < minMtaning) {
+                minMtaning = expenses;
+            }
+        }
+        System.out.println("Минимальная сумма трат за день составила " + minMtaning + " рублей. Максимальная сумма трат за день составила " +  maxMeaning + " рублей.");
     }
 }
 
