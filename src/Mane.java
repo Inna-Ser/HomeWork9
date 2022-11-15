@@ -15,10 +15,10 @@ public class Mane {
     public static void main(String[] args) {
         int[] arr = generateRandomArray();
         int sum = 0;
-        for (int i = 0; i < arr.length; i++) {
-            sum = sum + arr[i];
+        for (int element:arr) {
+            sum += element;
         }
-        System.out.println(sum);
+        System.out.println("Сумма затрат затрат за месяц составила " + sum + " рублей.");
     }
 }
 
