@@ -33,11 +33,9 @@ public class Mane {
         }
         System.out.println("Минимальная сумма трат за день составила " + minMtaning + " рублей. Максимальная сумма трат за день составила " + maxMeaning + " рублей.");
     // Задача № 3 Средняя сумма трат за ммесяц
-        for (int j : arr) {
-            double averageCost = (sum += j) / arr.length;
+        int j = 0;
+        double averageCost = (sum += j) / arr.length;
             System.out.println("Средняя сумма трат за месяц составила " + averageCost + " рублей.");
-            break;
-        }
     // Задача № 4
         char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
         for (int i = reverseFullName.length - 1; i >= 0; i--) {
