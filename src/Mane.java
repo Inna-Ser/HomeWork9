@@ -11,14 +11,36 @@ public class Mane {
         }
         return arr;
     }
-// Задача № 1 Сумма
+
+    // Задача № 1 Сумма
     public static void main(String[] args) {
         int[] arr = generateRandomArray();
         int sum = 0;
-        for (int i = 0; i < arr.length; i++) {
-            sum = sum + arr[i];
+        for (int expence : arr) {
+            sum += expence;
         }
-        System.out.println(sum);
+        System.out.println("Сумма затрат затрат за месяц составила " + sum + " рублей.");
+        // Задача № 2 Вилка затрат
+        int maxMeaning = 99_999;
+        int minMtaning = 200_001;
+        for (int expenses : arr) {
+            if (expenses > maxMeaning) {
+                maxMeaning = expenses;
+            }
+            if (expenses < minMtaning) {
+                minMtaning = expenses;
+            }
+        }
+        System.out.println("Минимальная сумма трат за день составила " + minMtaning + " рублей. Максимальная сумма трат за день составила " + maxMeaning + " рублей.");
+    // Задача № 3 Средняя сумма трат за ммесяц
+        int j = 0;
+        double averageCost = (sum += j) / arr.length;
+            System.out.println("Средняя сумма трат за месяц составила " + averageCost + " рублей.");
+    // Задача № 4
+        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        for (int i = reverseFullName.length - 1; i >= 0; i--) {
+            out.print(reverseFullName[i]);
+        }   
     }
 }
 
